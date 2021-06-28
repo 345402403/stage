@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-dto" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-web-bootstrap" charset="UTF-8" />
+  </component>
+</project>
