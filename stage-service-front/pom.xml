@@ -10,12 +10,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.mstack.stage</groupId>
-    <artifactId>stage-common</artifactId>
-
+    <artifactId>stage-service-front</artifactId>
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.mstack.stage</groupId>
+            <artifactId>stage-web-front</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mstack.stage</groupId>
+            <artifactId>stage-dto</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mstack.stage</groupId>
+            <artifactId>stage-dao</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

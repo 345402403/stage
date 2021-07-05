@@ -10,11 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.mstack.stage</groupId>
-    <artifactId>stage-service</artifactId>
+    <artifactId>stage-service-mgr</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.mstack.stage</groupId>
-            <artifactId>stage-web</artifactId>
+            <artifactId>stage-web-mgr</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

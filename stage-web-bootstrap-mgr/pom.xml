@@ -30,11 +30,11 @@
 
     </properties>
     <groupId>org.mstack.stage</groupId>
-    <artifactId>stage-web-bootstrap</artifactId>
+    <artifactId>stage-web-bootstrap-mgr</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.mstack.stage</groupId>
-            <artifactId>stage-service</artifactId>
+            <artifactId>stage-service-mgr</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
