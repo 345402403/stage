@@ -1,0 +1,9 @@
+server:
+  port: 9090
+
+spring:
+  dataSource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: 'jdbc:mysql://11.51.199.117:3306/wuce_db?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull'
+    username: root
+    password: 123456

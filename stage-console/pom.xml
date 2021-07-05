@@ -10,26 +10,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.mstack.stage</groupId>
-    <artifactId>stage-common</artifactId>
-
+    <artifactId>stage-console</artifactId>
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.mstack.stage</groupId>
+            <artifactId>stage-dto</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.45</version>
+            <groupId>org.mstack.stage</groupId>
+            <artifactId>stage-dao</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

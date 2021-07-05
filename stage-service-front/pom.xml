@@ -27,6 +27,11 @@
             <artifactId>stage-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.mstack.stage</groupId>
+            <artifactId>stage-console</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

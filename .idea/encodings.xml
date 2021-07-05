@@ -3,10 +3,12 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-console/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-domain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-dto" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-service-front" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-service-front/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-front/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-mgr" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/java" charset="UTF-8" />

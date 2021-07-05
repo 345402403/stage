@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="stage-web-bootstrap-mgr" />
+        <module name="stage-console" />
         <module name="stage-common" />
         <module name="stage-web-bootstrap-front" />
         <module name="stage-dao" />
@@ -28,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="stage" options="-parameters" />
       <module name="stage-common" options="-parameters" />
+      <module name="stage-console" options="-parameters" />
       <module name="stage-dao" options="-parameters" />
       <module name="stage-domain" options="-parameters" />
       <module name="stage-dto" options="-parameters" />
