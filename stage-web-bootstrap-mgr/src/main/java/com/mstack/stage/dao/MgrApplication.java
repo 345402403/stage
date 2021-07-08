@@ -1,4 +1,4 @@
-package com.mstack.stage;
+package com.mstack.stage.dao;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

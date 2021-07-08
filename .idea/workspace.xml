@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="584fd92d-5b69-4932-becf-282f7999792d" name="Default Changelist" comment="FEA:console">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="584fd92d-5b69-4932-becf-282f7999792d" name="Default Changelist" comment="FEA:some idea files">
+      <change afterPath="$PROJECT_DIR$/stage-dao/src/main/java/com/mstack/stage/dao/common/UserInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-dao/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-dao/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-domain/src/main/java/com/mstack/stage/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-domain/src/main/java/com/mstack/stage/domain/entity/UserInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-dto/src/main/java/com/mstack/stage/dto/user/UserInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-web-bootstrap-front/src/main/resources/spring/spring-main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/resources/script/sql/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/resources/script/sql/structure.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stage-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage-console/src/main/java/com/mstack/stage/service/SecurityWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stage-console/src/main/java/com/mstack/stage/dao/service/security/SecurityWebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stage-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage-web-bootstrap-front/src/main/java/com.mstack.stage/FrontApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stage-web-bootstrap-front/src/main/java/com/mstack/stage/dao/FrontApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage-web-bootstrap-front/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stage-web-bootstrap-front/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/java/com/mstack/stage/MgrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/java/com/mstack/stage/dao/MgrApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -124,24 +143,29 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8.0_144" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stage-web-bootstrap-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stage-dao/src/main/resources/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\private\stage\stage-dao\src\main\resources\mapper" />
+      <recent name="D:\code\private\stage\stage-dao\src\main\resources" />
       <recent name="D:\code\private\stage\stage-web-bootstrap-front" />
       <recent name="D:\code\private\stage\" />
       <recent name="D:\code\private\stage\stage-web" />
-      <recent name="D:\code\private\stage" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\private\stage\stage-web-bootstrap-mgr\src\main\resources\script\sql" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mstack.stage.dto.user" />
+      <recent name="com.mstack.stage.domain" />
       <recent name="com.mstack.stage" />
     </key>
   </component>
@@ -161,7 +185,7 @@
     <configuration name="front" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.mstack.stage.FrontApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.mstack.stage.dao.FrontApplication" />
       <module name="stage-web-bootstrap-front" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625487287682</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="FEA:some idea files">
+      <created>1625708257907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625708257907</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -311,7 +342,8 @@
     <MESSAGE value="FEA:项目结构调整，service、web、bootstrap根据前后台业务分开" />
     <MESSAGE value="FEA:git ignore" />
     <MESSAGE value="FEA:console" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEA:console" />
+    <MESSAGE value="FEA:some idea files" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEA:some idea files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">

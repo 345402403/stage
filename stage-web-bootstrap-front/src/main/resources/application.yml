@@ -4,6 +4,10 @@ server:
 spring:
   dataSource:
     driverClassName: com.mysql.jdbc.Driver
-    url: 'jdbc:mysql://11.51.199.117:3306/wuce_db?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull'
+    url: 'jdbc:mysql://11.51.199.117:3306/stage?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull'
     username: root
     password: 123456
+
+mybatis:
+  config-location: 'classpath:mybatis-config.xml'
+  mapper-locations: 'classpath:mapper/*Mapper.xml'
