@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="584fd92d-5b69-4932-becf-282f7999792d" name="Default Changelist" comment="FEA:git ignore">
-      <change afterPath="$PROJECT_DIR$/stage-console/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stage-console/src/main/java/com/mstack/stage/service/SecurityWebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stage-web-bootstrap-front/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/java/com/mstack/stage/MgrApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="584fd92d-5b69-4932-becf-282f7999792d" name="Default Changelist" comment="FEA:console">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stage-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-service-front/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stage-service-front/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-service-mgr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stage-service-mgr/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625480367634</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FEA:console">
+      <created>1625487287682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625487287682</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -312,7 +310,8 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
     <MESSAGE value="FEA:项目结构调整，service、web、bootstrap根据前后台业务分开" />
     <MESSAGE value="FEA:git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEA:git ignore" />
+    <MESSAGE value="FEA:console" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEA:console" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
