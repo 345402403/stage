@@ -7,10 +7,10 @@
         <module>stage-domain</module>
         <module>stage-dto</module>
         <module>stage-dao</module>
-        <module>stage-web-front</module>
         <module>stage-web-bootstrap-front</module>
         <module>stage-service-front</module>
-        <module>stage-web-mgr</module>
+        <module>stage-web-api-front</module>
+        <module>stage-web-api-mgr</module>
         <module>stage-web-bootstrap-mgr</module>
         <module>stage-service-mgr</module>
         <module>stage-console</module>
@@ -156,6 +156,11 @@
                 <groupId>com.lmax</groupId>
                 <artifactId>disruptor</artifactId>
                 <version>${lmax.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.session</groupId>
+                <artifactId>spring-session-core</artifactId>
+                <version>${spring-boot-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

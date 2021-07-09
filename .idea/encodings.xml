@@ -12,13 +12,13 @@
     <file url="file://$PROJECT_DIR$/stage-dto/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-service-front" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-service-front/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-web-api-front/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-web-api-mgr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stage-web-api-mgr/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-front/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-front/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-mgr" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stage-web-bootstrap-mgr/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/stage-web-front/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/stage-web-mgr" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/stage-web-mgr/src/main/java" charset="UTF-8" />
   </component>
 </project>

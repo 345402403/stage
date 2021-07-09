@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>org.mstack.stage</groupId>
-            <artifactId>stage-web-front</artifactId>
+            <artifactId>stage-web-api-front</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

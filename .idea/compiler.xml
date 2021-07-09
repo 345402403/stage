@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="stage-web-bootstrap-mgr" />
+        <module name="stage-web-api-front" />
         <module name="stage-console" />
         <module name="stage-common" />
         <module name="stage-web-bootstrap-front" />
+        <module name="stage-web-api-mgr" />
         <module name="stage-dao" />
-        <module name="stage-web-front" />
         <module name="stage-service-front" />
         <module name="stage-dto" />
-        <module name="stage-web-mgr" />
         <module name="stage-domain" />
         <module name="stage-service-mgr" />
       </profile>
@@ -30,10 +30,10 @@
       <module name="stage-dto" options="" />
       <module name="stage-service-front" options="" />
       <module name="stage-service-mgr" options="" />
+      <module name="stage-web-api-front" options="" />
+      <module name="stage-web-api-mgr" options="" />
       <module name="stage-web-bootstrap-front" options="" />
       <module name="stage-web-bootstrap-mgr" options="" />
-      <module name="stage-web-front" options="" />
-      <module name="stage-web-mgr" options="" />
     </option>
   </component>
 </project>

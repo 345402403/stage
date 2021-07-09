@@ -21,7 +21,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id, user_name, nick_name, password, portrait, wechat, wechat, email, is_enabled, create_user,
+        id, user_name, nick_name, password, portrait, mobile_phone, wechat, email, is_enabled, create_user,
         create_time, update_user, update_time, is_delete, version
     </sql>
 
