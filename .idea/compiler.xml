@@ -19,29 +19,21 @@
         <module name="stage-service-mgr" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="stage-service" target="1.8" />
-      <module name="stage-service (1)" target="1.8" />
-      <module name="stage-web-bootstrap" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="stage" options="-parameters" />
-      <module name="stage-common" options="-parameters" />
-      <module name="stage-console" options="-parameters" />
-      <module name="stage-dao" options="-parameters" />
-      <module name="stage-domain" options="-parameters" />
-      <module name="stage-dto" options="-parameters" />
-      <module name="stage-service" options="-parameters" />
-      <module name="stage-service (1)" options="-parameters" />
-      <module name="stage-service-front" options="-parameters" />
-      <module name="stage-service-mgr" options="-parameters" />
-      <module name="stage-web-bootstrap" options="-parameters" />
-      <module name="stage-web-bootstrap-front" options="-parameters" />
-      <module name="stage-web-bootstrap-mgr" options="-parameters" />
-      <module name="stage-web-front" options="-parameters" />
-      <module name="stage-web-mgr" options="-parameters" />
+      <module name="stage" options="" />
+      <module name="stage-common" options="" />
+      <module name="stage-console" options="" />
+      <module name="stage-dao" options="" />
+      <module name="stage-domain" options="" />
+      <module name="stage-dto" options="" />
+      <module name="stage-service-front" options="" />
+      <module name="stage-service-mgr" options="" />
+      <module name="stage-web-bootstrap-front" options="" />
+      <module name="stage-web-bootstrap-mgr" options="" />
+      <module name="stage-web-front" options="" />
+      <module name="stage-web-mgr" options="" />
     </option>
   </component>
 </project>

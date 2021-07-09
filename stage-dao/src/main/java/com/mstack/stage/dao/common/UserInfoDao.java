@@ -5,5 +5,6 @@ import org.apache.ibatis.annotations.Param;
 
 public interface UserInfoDao {
 
-    UserInfoEntity selectByUserName(@Param("") String userName);
+    UserInfoEntity selectByUserName(@Param("userName") String userName);
+
 }

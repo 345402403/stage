@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="600" status="error" name="defaultLogConfig">
+    <properties>
+        <property name="app_name">stage</property>
+        <property name="log_home">/export/Logs/${app_name}</property>
+        <property name="business_log_size">100 MB</property>
+        <property name="business_log_file_count">5</property>
+        <property name="business_log_level">INFO</property>
+        <property name="middleWare_log_size">10 MB</property>
+        <property name="middleWare_log_file_count">5</property>
+        <property name="middleWare_log_level">ERROR</property>
+        <property name="jsf_log_size">100 MB</property>
+        <property name="jsf_log_file_count">5</property>
+        <property name="jsf_log_level">INFO</property>
+        <property name="patternLayout">%-d{yyyy-MM-dd HH:mm:ss} [%p] [%t] - %c.%M():%L - %m%n</property>
+        <property name="encoding">UTF-8</property>
+    </properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout charset="UTF-8" pattern="${patternLayout}"/>
+        </Console>
+
+        <RollingFile name="middleWare" fileName="${log_home}/middleWare.log"
+                     filePattern="${log_home}/$${date:yyyy-MM-dd}/middleWare-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout charset="${encoding}" pattern="${patternLayout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${middleWare_log_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${middleWare_log_file_count}"/>
+        </RollingFile>
+
+        <RollingFile name="business" fileName="${log_home}/business.log"
+                     filePattern="${log_home}/$${date:yyyy-MM-dd}/business-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout charset="${encoding}" pattern="${patternLayout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${business_log_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${business_log_file_count}"/>
+        </RollingFile>
+
+        <RollingFile name="no-specify" fileName="${log_home}/noSpecify.log"
+                     filePattern="${log_home}/$${date:yyyy-MM-dd}/noSpecify-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout charset="${encoding}" pattern="${patternLayout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${middleWare_log_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${middleWare_log_file_count}"/>
+        </RollingFile>
+
+        <RollingFile name="startup" fileName="${log_home}/startup.log"
+                     filePattern="${log_home}/$${date:yyyy-MM-dd}/startup-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout pattern="${patternLayout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${business_log_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${business_log_file_count}"/>
+        </RollingFile>
+
+        <RollingFile name="sql" fileName="${log_home}/sql.log"
+                     filePattern="${log_home}/$${date:yyyy-MM-dd}/sql-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout pattern="${patternLayout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${business_log_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${business_log_file_count}"/>
+        </RollingFile>
+
+        <RollingFile name="jsfLog" fileName="${log_home}/jsfLog.log"
+                     filePattern="${log_home}/$${date:yyyy-MM-dd}/jsfLog-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout pattern="${patternLayout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${jsf_log_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${jsf_log_file_count}"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <AsyncLogger name="org.springframework" level="${middleWare_log_level}">
+            <AppenderRef ref="middleWare"/>
+            <AppenderRef ref="Console"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="com.mstack.stage" level="${business_log_level}" additivity="false">
+            <AppenderRef ref="business"/>
+            <AppenderRef ref="Console"/>
+        </AsyncLogger>
+        <AsyncLogger name="com.mstack.stage.FrontApplication" level="${business_log_level}">
+            <AppenderRef ref="startup"/>
+            <AppenderRef ref="middleWare"/>
+        </AsyncLogger>
+        <Root level="INFO">
+            <AppenderRef ref="no-specify"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

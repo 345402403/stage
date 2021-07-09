@@ -20,7 +20,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.jd.upd.lok.entity"/>
+        <package name="com.mstack.stage.domain.entity"/>
     </typeAliases>
 
     <plugins>

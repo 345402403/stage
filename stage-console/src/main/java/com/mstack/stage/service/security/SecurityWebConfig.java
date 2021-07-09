@@ -1,23 +1,30 @@
-package com.mstack.stage.dao.service.security;
+package com.mstack.stage.service.security;
 
+import com.mstack.stage.service.user.UserInfoService;
+import com.mstack.stage.dto.user.UserInfoDto;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+
+import javax.annotation.Resource;
 
 @EnableWebSecurity
 @Configuration
 @Slf4j
 public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
+
+    @Resource
+    private UserInfoService userInfoService;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -27,7 +34,7 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/403").permitAll()
                 .antMatchers("/user/login").permitAll()
                 .antMatchers("/admin/index").hasRole("ADMIN")//指定权限为ADMIN才能访问
-                .antMatchers("/person").hasAnyRole("ADMIN","USER")
+                .antMatchers("/person").hasAnyRole("ADMIN", "USER")
                 .anyRequest()
                 .authenticated()
                 .and()
@@ -38,12 +45,13 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable();
     }
+
     /**
      * 自定义认证策略
      *
      * @return
      */
-    @Autowired
+/*    @Autowired
     public void configGlobal(AuthenticationManagerBuilder auth) throws Exception {
         String password = passwordEncoder().encode("1234567");
 
@@ -56,7 +64,7 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
                 .roles("USER").and().withUser("admin").password(password)
                 .roles("admin").and();
 
-    }
+    }*/
   /*  @Autowired
     private AuthenticationSuccessHandler myLoginSuccessHandler; //认证成功结果处理器
 
@@ -69,10 +77,16 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public UserDetailsService userDetailsService(){
-        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withUsername("operator").password("123456").roles("").build());
-        manager.createUser(User.withUsername("guest").password("123456").roles("").build());
-        return manager;
+    public UserDetailsService userDetailsService() {
+        return username -> {
+            UserInfoDto users = userInfoService.selectByUserName(username);
+            if (users == null) {
+                throw new UsernameNotFoundException("用户名未找到");
+            }
+            String password = users.getPassword();
+            PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
+            String passwordAfterEncoder = passwordEncoder.encode(password);
+            return User.withUsername(username).password(passwordAfterEncoder).roles("").build();
+        };
     }
 }
